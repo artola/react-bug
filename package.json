@@ -1,0 +1,30 @@
+{
+  "name": "react-bug",
+  "version": "1.0.0",
+  "description": "Possible bug",
+  "author": "Martin Artola",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/runtime": "^7.6.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-env": "7.5.5",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "webpack": "4.39.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "webpack --mode=production",
+    "start:development": "webpack-dev-server --mode=development",
+    "start:production": "webpack-dev-server --mode=production"
+  }
+}
